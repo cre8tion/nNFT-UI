@@ -1,7 +1,7 @@
 import * as naj from "near-api-js";
 import { Gas, NEAR } from "near-units";
 import { Buffer } from "buffer";
-import { call, view, wallet } from "../utils/near";
+import { call, wallet } from "../utils/near";
 
 /**
  * The contract wrapped by this file.
@@ -14,7 +14,7 @@ import { call, view, wallet } from "../utils/near";
  * contract. If the env var `REACT_APP_CONTRACT_NAME` changes, this file is
  * still a wrapper around the guest book contract.
  */
-export const CONTRACT_NAME = "guest-book.testnet";
+export const CONTRACT_NAME = "nft.crypto_overflow.testnet";
 
 /**
  * This is a Contract object instantiated using near-api-js.
@@ -26,33 +26,25 @@ export const CONTRACT_NAME = "guest-book.testnet";
  * See other exports for a fully-typed approach instead.
  */
 export const Untyped = new naj.Contract(wallet.account(), CONTRACT_NAME, {
-  viewMethods: ["getMessages"],
-  changeMethods: ["addMessage"],
+  viewMethods: [],
+  changeMethods: ["nft_mint"],
 });
 
 /**
- * The data structure returned by `getMessages`
+ * The data structure for Token Metadata
  */
-export interface Message {
-  premium: boolean;
-  sender: string;
-  text: string;
+export interface TokenMetadata {
+  title: string;
+  description: string;
+  media: string;
+  copies: number;
 }
 
 /**
- * Get most recent 10 messages
- */
-export async function getMessages(): Promise<Message[]> {
-  return view(CONTRACT_NAME, "getMessages");
-}
-
-/**
- * Add a new message to the guest book.
+ * Mint a NFT from the contract.
  *
  * Whoever is signed in (`wallet.account()`) will be set as the `sender`
  *
- * If an `attachedDeposit` of at least 0.01 NEAR is included, the message will
- * be set as `premium`.
  *
  * @param args.text The text of the message
  * @param options.attachedDeposit Send at least 0.01 NEAR (`NEAR.parse('0.1')`) for the message to be considered "premium"
@@ -61,9 +53,11 @@ export async function getMessages(): Promise<Message[]> {
  * @param options.walletCallbackUrl Callback url to send the NEAR Wallet if using it to sign transactions.
  * @param options.stringify Convert input arguments into a bytes array. By default the input is treated as a JSON. This is useful if the contract accepts Borsh (see https://borsh.io)
  */
-export async function addMessage(
+export async function nftMint(
   args: {
-    text: string;
+    token_id: string;
+    receiver_id: string;
+    token_metadata: TokenMetadata;
   },
   options?: {
     attachedDeposit?: NEAR;
@@ -73,5 +67,5 @@ export async function addMessage(
     stringify?: (input: any) => Buffer;
   }
 ): Promise<void> {
-  return call(CONTRACT_NAME, "addMessage", args, options);
+  return call(CONTRACT_NAME, "nft_mint", args, options);
 }

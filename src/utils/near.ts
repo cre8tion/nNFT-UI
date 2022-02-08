@@ -19,6 +19,18 @@ export const near = new naj.Near({
   headers: {},
 });
 
+//network config (replace testnet with mainnet or betanet)
+export const provider = new naj.providers.JsonRpcProvider(
+  "https://archival-rpc.testnet.near.org"
+);
+
+
+// User-defined type guards
+export function isFinalised(object: unknown): object is naj.providers.FinalExecutionStatus {
+  return Object.prototype.hasOwnProperty.call(object, "SuccessValue")
+    || Object.prototype.hasOwnProperty.call(object, "Failure");
+}
+
 /**
  * Interface to NEAR Wallet
  */
