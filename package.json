@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "buffer": "^6.0.3",
-    "near-api-js": "0.44.2",
+    "near-api-js": "0.45.1",
     "near-units": "^0.1.9",
     "random": "^3.0.6",
     "random-int": "^3.0.0",
