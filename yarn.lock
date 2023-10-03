@@ -3,9 +3,9 @@
 
 
 "@adobe/css-tools@^4.0.1":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.2.0.tgz#e1a84fca468f4b337816fcb7f0964beb620ba855"
-  integrity sha512-E09FiIft46CmH5Qnjb0wsW54/YQd69LsxeKUOWawmws1XWvyFGURnAChH0mlr7YPFR1ofwvUQfcL0J3lMxXqPA==
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.3.1.tgz#abfccb8ca78075a2b6187345c26243c1a0842f28"
+  integrity sha512-/62yikz7NLScCGAAST5SHdnjaDJQBDq0M2muyRTpf2VQhw6StBg2ALiu73zSJQ4fMVLA+0uBhBHAle7Wg+2kSg==
 
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
@@ -1429,10 +1429,10 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@remix-run/router@1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.7.2.tgz#cba1cf0a04bc04cb66027c51fa600e9cbc388bc8"
-  integrity sha512-7Lcn7IqGMV+vizMPoEl5F0XDshcdDYtMI6uJLQdQz5CfZAwy3vvGKYSUk789qndt5dEC4HfSjviSYlSoHGL2+A==
+"@remix-run/router@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.9.0.tgz#9033238b41c4cbe1e961eccb3f79e2c588328cf6"
+  integrity sha512-bV63itrKBC0zdT27qYm6SDZHlkXwFL1xMBuhkn+X7l0+IIhNaH5wuuvZKp6eKhCD4KFhujhfhCT1YxXW6esUIA==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.0"
@@ -1845,10 +1845,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.15.tgz#97779282c09c09577120a2162e71d8380003590a"
   integrity sha512-zWt4SDDv1S9WRBNxLFxFRHxdD9tvH8f5/kg5/IaLFdnSNXsDY4eL3Q3XXN+VxUnWIhyVFDwcsmAprvwXoM/ClA==
 
-"@types/node@^16.18.39":
-  version "16.18.39"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.39.tgz#aa39a1a87a40ef6098ee69689a1acb0c1b034832"
-  integrity sha512-8q9ZexmdYYyc5/cfujaXb4YOucpQxAV4RMG0himLyDUOEr8Mr79VrqsFI+cQ2M2h89YIuy95lbxuYjxT4Hk4kQ==
+"@types/node@^16.18.57":
+  version "16.18.57"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.57.tgz#1ba31c0e5c403aab90a3b7826576e6782ded779b"
+  integrity sha512-piPoDozdPaX1hNWFJQzzgWqE40gh986VvVx/QO9RU4qYRE55ld7iepDVgZ3ccGUw0R4wge0Oy1dd+3xOQNkkUQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -7007,10 +7007,10 @@ postcss@^7.0.35:
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.3.5, postcss@^8.4.23, postcss@^8.4.27, postcss@^8.4.4, postcss@^8.4.5:
-  version "8.4.27"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.27.tgz#234d7e4b72e34ba5a92c29636734349e0d9c3057"
-  integrity sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==
+postcss@^8.3.5, postcss@^8.4.23, postcss@^8.4.31, postcss@^8.4.4, postcss@^8.4.5:
+  version "8.4.31"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.31.tgz#92b451050a9f914da6755af352bdc0192508656d"
+  integrity sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==
   dependencies:
     nanoid "^3.3.6"
     picocolors "^1.0.0"
@@ -7228,19 +7228,19 @@ react-refresh@^0.11.0:
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
 react-router-dom@6:
-  version "6.14.2"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.14.2.tgz#88f520118b91aa60233bd08dbd3fdcaea3a68488"
-  integrity sha512-5pWX0jdKR48XFZBuJqHosX3AAHjRAzygouMTyimnBPOLdY3WjzUSKhus2FVMihUFWzeLebDgr4r8UeQFAct7Bg==
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.16.0.tgz#86f24658da35eb66727e75ecbb1a029e33ee39d9"
+  integrity sha512-aTfBLv3mk/gaKLxgRDUPbPw+s4Y/O+ma3rEN1u8EgEpLpPe6gNjIsWt9rxushMHHMb7mSwxRGdGlGdvmFsyPIg==
   dependencies:
-    "@remix-run/router" "1.7.2"
-    react-router "6.14.2"
+    "@remix-run/router" "1.9.0"
+    react-router "6.16.0"
 
-react-router@6.14.2:
-  version "6.14.2"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.14.2.tgz#1f60994d8c369de7b8ba7a78d8f7ec23df76b300"
-  integrity sha512-09Zss2dE2z+T1D03IheqAFtK4UzQyX8nFPWx6jkwdYzGLXd5ie06A6ezS2fO6zJfEb/SpG6UocN2O1hfD+2urQ==
+react-router@6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.16.0.tgz#abbf3d5bdc9c108c9b822a18be10ee004096fb81"
+  integrity sha512-VT4Mmc4jj5YyjpOi5jOf0I+TYzGpvzERy4ckNSvSh2RArv8LLoCxlsZ2D+tc7zgjxcY34oTz2hZaeX5RVprKqA==
   dependencies:
-    "@remix-run/router" "1.7.2"
+    "@remix-run/router" "1.9.0"
 
 react-scripts@5.0.1:
   version "5.0.1"
